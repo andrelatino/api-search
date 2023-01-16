@@ -1,0 +1,25 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head> 
+  <body>
+    <div id="searchContainer">
+      <input type="text" id="search-input" placeholder="Search..." required>
+      <button type="submit" id="search-button" onclick=searchImages()>Search</button>
+    </div>  
+    <p id="total"></p>
+    <div id="grid"></div>
+    <div id="btnContainer"><button id="next" onclick="loadNextPage()"> + </button></div>
+    <script>
+      let count = 2;
+      const button = document.getElementById('next');
+      button.addEventListener('click', function() {
+      count += 1;
+      // console.log(count);
+    });
+    </script>
+  <body>  
+</html>
